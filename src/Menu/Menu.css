@@ -1,0 +1,93 @@
+.menu-container {
+  position: relative;
+  width: 2.5rem;
+  height: auto;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.menu-container.open .dropdown-menu {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #0B04EE;
+}
+
+ul li {
+  padding: 10px;
+  border-bottom: 1px solid #EEE;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s ease; /* Adicione uma transição suave para a mudança de cor */
+}
+
+ul li a:hover,
+ul li a:hover .rotate { /* Inclua a rotação da seta aqui */
+  color: #0B04EE;
+  cursor: pointer; /* Mude o cursor para uma mãozinha */
+}
+
+.rotate {
+  transform: rotate(100deg);
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Adicione a animação de suavização */
+}
+
+.dropdown a:hover {
+  color: #0B04EE;
+}
+
+.close-menu {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submenu {
+  display: block; /* Altere para 'block' para que a transição funcione */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease; /* Adicione uma transição suave na altura */
+}
+
+.dropdown.open .submenu {
+  max-height: 300px; /* Ajuste a altura máxima conforme necessário */
+  transition: max-height 0.4s ease; /* Adicione a mesma transição aqui */
+}

@@ -3,7 +3,8 @@ import './Cabecalho.css'
 import BotaoCarrinho from '../BotaoCarrinho'
 import BotaoUsuario from '../BotaoUsuario'
 import BarraPesquisa from '../BarraPesquisa'
-import Menu from '../Menu'
+import Menu from '../../Menu'
+// import Menu from '../Menu'
 
 function Cabecalho() {
     return (
