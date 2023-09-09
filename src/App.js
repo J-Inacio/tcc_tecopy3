@@ -1,16 +1,23 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './reset.css'
 import './global.css';
-import './style.css'
 import Cabecalho from './components/Cabecalho';
 import Menu from './Menu';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 
 function App() {
   return (
     
     <>
-    <Cabecalho/>
+    <BrowserRouter>
+      <Routes>
+
+        <Route path='/' element= {<HomePage/>} />
+        <Route path='/cadastro' element= {<Cadastro/>} />
+
+      </Routes>
+    </BrowserRouter>
     </>
   );
 }
