@@ -1,0 +1,7 @@
+rgb(187, 192, 196) - cinza opaco
+#03367b - azul royal
+#ff914d - laranja 
+#f8711b - laranja escuro
+#ffb757 - laranja claro
+90°: #ffde59, #ff914d - gradiente laranja
+90°: #000000, #3533cd - gradiente azul escuro

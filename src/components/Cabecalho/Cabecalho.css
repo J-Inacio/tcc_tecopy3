@@ -1,0 +1,27 @@
+.main-cabecalho {
+  border-bottom: 2px solid var(--estilo-tecopy-azul-tecopy, #221F8B);
+  background: #FBFBFB;
+  width: 100vw;
+  height: 8rem;
+}
+
+.metade-cima-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.metade-baixo-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.carrinho-e-user-cabecalho {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+  width: 5.5rem;
+}

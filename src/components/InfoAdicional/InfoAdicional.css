@@ -1,0 +1,40 @@
+.info-global-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.info-main-container {
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    border: 2px solid #03367b;
+    background-color: #03367b;
+    color: #ffffff;
+    padding: 12px;
+    display: flex;
+    width: 24em;
+    text-align: center;
+    margin: 8px;
+}
+
+.info-orcamento-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.info-orcamento-whatsapp {
+    justify-content: space-around;
+    height: 3em;
+    width: 3em;
+    margin: 0em 1em;
+    color: #ffffff;
+}
+.info-orcamento-whatsapp svg {
+    height: 100%;
+    width: 100%;
+}
+
+

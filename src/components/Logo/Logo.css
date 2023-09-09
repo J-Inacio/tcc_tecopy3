@@ -1,0 +1,12 @@
+.logo-tecopy {
+    width: 5rem;
+    height: auto;
+    /* padding: 0.5rem 0.5rem 0rem; */
+    margin: 0.5rem;
+    display: inline-block;
+}
+
+.logo-tecopy img {
+    width: 100%;
+    height: 100%;
+}

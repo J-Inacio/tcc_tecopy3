@@ -1,0 +1,15 @@
+.div-botao-carrinho button {
+    background-color: transparent;
+    border: none;
+}
+.div-botao-carrinho {
+    display: inline-block;
+    width: 2.5rem;
+    height: auto;
+    padding: 0.25rem;
+}
+.div-botao-carrinho img {
+    width: 100%;
+    height: 100%;
+}
+

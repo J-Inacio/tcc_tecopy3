@@ -1,0 +1,17 @@
+
+.main-container-carrosel {
+    /* display: flex; */
+    /* justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 24px 0px;
+    align-items: center; */
+    /* gap: 2rem; */
+    padding: 1rem 0rem;
+}
+.carrosel {
+    /* width: 100%; */
+}
+.main-container-carrosel img {
+    /* width: 1000px; */
+}

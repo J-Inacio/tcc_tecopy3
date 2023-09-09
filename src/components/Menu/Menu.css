@@ -1,0 +1,9 @@
+.botao-container-menu {
+  display: block;
+  width: 2.5rem;
+  height: auto;
+}
+
+.botao-container-menu button {
+  border: none;
+}
