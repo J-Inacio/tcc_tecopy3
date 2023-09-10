@@ -1,6 +1,7 @@
 import './HomePage.css'
 import Cabecalho from '../../components/Cabecalho'
 import Carrosel from '../../components/Carrosel'
+import CarrosselCircular from '../../components/CarrosselCircular'
 
 
 function HomePage() {
@@ -8,6 +9,7 @@ function HomePage() {
     <div>
       <Cabecalho/>
       <Carrosel/>
+      <CarrosselCircular/>
       {/* <CardProduto/> */}
     </div>
   )

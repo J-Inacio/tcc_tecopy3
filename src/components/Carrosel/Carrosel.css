@@ -1,57 +1,55 @@
-
 .main-container-carrosel {
-    /* display: flex; */
-    /* justify-content: center;
-    width: 50%;
-    margin: 0 auto;
-    padding: 24px 0px;
-    align-items: center; */
-    /* gap: 2rem; */
     padding: 1rem;
 }
-.carrosel {
-    /* width: 100%; */
-}
-.main-container-carrosel img {
-    /* width: 1000px; */
-}
 
-/* Carrosel.css */
-
-/* Estilo para arredondar os cantos do carrossel */
-.carrosel .carousel-inner {
-    border-radius: 20px;
-    overflow: hidden;
-  }
-  
-  /* Estilo para tornar o carrossel responsivo */
+/* Estilos para dispositivos desktop com largura mínima de 768 pixels */
+@media screen and (min-width: 768px) {
   .carrosel .carousel {
-    width: 100%;
-    max-width: 800px; /* Defina a largura máxima desejada para o carrossel */
+    width: 80%; /* Defina a largura máxima desejada para o carrossel em desktop */
+    max-width: 800px; /* Largura máxima permitida, ajuste conforme necessário */
     margin: 0 auto; /* Centralize o carrossel na tela */
   }
+}
   
-  /* Estilos personalizados para os indicadores */
+.carrosel .carousel-inner {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.carrosel .carousel {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
 .carousel-indicators {
-    position: relative; /* Defina a posição como relativa */
-    top: 0; /* Coloque os indicadores no topo do elemento pai */
-    margin-top: 10px; /* Adicione um espaçamento superior */
-    text-align: center; /* Centralize os indicadores horizontalmente */
-  }
-  
-  /* Estilos para os pontos individuais (opcional) */
-  .carousel-indicators li {
-    width: 10px; /* Largura dos pontos */
-    height: 10px; /* Altura dos pontos */
-    margin: 0 5px; /* Espaçamento entre os pontos */
-    background-color: #999; /* Cor de fundo dos pontos não ativos */
-    border: none; /* Remova a borda dos pontos */
-    border-radius: 50%; /* Faça os pontos terem cantos arredondados */
-    cursor: pointer; /* Altere o cursor ao pairar sobre os pontos */
-  }
-  
-  /* Estilos para o ponto ativo (opcional) */
-  .carousel-indicators .active {
-    background-color: #333; /* Cor de fundo do ponto ativo */
-  }
-  
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Estilos para os pontos individuais (dots) (opcional) no Bootstrap 5 */
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0 5px !important;
+    background-color: #999 !important;
+    border: none !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+}
+
+/* Estilos para o ponto ativo (opcional) no Bootstrap 5 */
+.carousel-indicators button.active {
+    background-color: #333 !important;
+}
+
+/* Ocultar os indicadores de "Próximo" e "Anterior" no Bootstrap 5 */
+.carrosel .carousel-control-prev,
+.carrosel .carousel-control-next {
+    display: none !important;
+}

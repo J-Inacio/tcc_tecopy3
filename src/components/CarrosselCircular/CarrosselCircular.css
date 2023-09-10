@@ -1,0 +1,72 @@
+.carrossel-container {
+  width: 90%; /* Ajuste a largura do carrossel conforme necessário */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.categorias-title {
+  color: var(--estilo-tecopy-preto-tecopy, #212529);
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  text-align: left;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 16px; /* Espaçamento à esquerda */
+  margin-bottom: 16px; /* Espaçamento inferior para evitar que fique colado na tela */
+}
+
+.categorias-title span {
+  display: block;
+}
+
+.carousel-item {
+  outline: none; /* Remove a borda de foco padrão */
+}
+
+.carousel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-image {
+  width: 5rem; /* Tamanho da imagem */
+  height: auto;
+  border-radius: 50%; /* Torna a imagem circular */
+  margin-bottom: 1rem; /* Espaçamento entre a imagem e o texto */
+  cursor: pointer; /* Altera o cursor ao passar o mouse sobre as imagens */
+}
+
+.carousel-text {
+  color: #212529; /* Cor do texto */
+  font-family: Inter; /* Fonte */
+  font-size: 0.875rem; /* Tamanho da fonte */
+  font-style: normal; /* Estilo da fonte */
+  font-weight: 700; /* Peso da fonte */
+  line-height: normal; /* Altura da linha */
+  text-align: center; /* Centralizar o texto horizontalmente */
+}
+
+/* Estilos padrão para ocultar o slide por padrão */
+.carrossel-container {
+  display: none;
+}
+
+/* Estilos para dispositivos desktop com largura mínima de 768 pixels */
+@media screen and (min-width: 768px) {
+  /* Mostrar o slide em dispositivos desktop */
+  .carrossel-container {
+    display: block;
+    /* Outros estilos para dispositivos desktop aqui, se necessário */
+    
+  }
+
+  .categorias-title span {
+    display: inline; /* Mostrar o texto em dispositivos desktop */
+  }
+  
+  .desktop-only {
+    display: block !important; /* Mostrar apenas em dispositivos desktop */
+  }
+}
