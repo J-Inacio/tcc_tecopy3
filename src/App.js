@@ -1,9 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './reset.css'
 import './global.css';
-import Cabecalho from './components/Cabecalho';
-import Menu from './Menu';
+
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import Cadastro from './pages/Cadastro';
 
 
 function App() {
